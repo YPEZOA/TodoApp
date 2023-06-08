@@ -10,7 +10,8 @@ scanner(
             'sonar.sources': 'src',
             'sonar.test': 'test',
             'sonar.javascript.coveragePlugin': 'lcov',
-            'sonar.javascript.lcov.reportPaths': 'output/coverage/jest/lcov.info'
+            'sonar.javascript.lcov.reportPaths': 'coverage/lcov.info',
+            'sonar.coverage.exclusions': '**/__tests__/**'
         }
     },
     () => process.exit()
