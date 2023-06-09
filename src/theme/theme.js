@@ -1,6 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
-import { COLORS } from './colors/colors'
 
 const styles = extendTheme({
   global: props => ({

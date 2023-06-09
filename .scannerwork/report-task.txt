@@ -2,5 +2,5 @@ projectKey=todo-app
 serverUrl=http://localhost:9090
 serverVersion=9.9.1.69595
 dashboardUrl=http://localhost:9090/dashboard?id=todo-app
-ceTaskId=AYiXuCxLOr-PNLN2BvhL
-ceTaskUrl=http://localhost:9090/api/ce/task?id=AYiXuCxLOr-PNLN2BvhL
+ceTaskId=AYih4dbHLIrOa1rJbyGr
+ceTaskUrl=http://localhost:9090/api/ce/task?id=AYih4dbHLIrOa1rJbyGr
