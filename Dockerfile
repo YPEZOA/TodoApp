@@ -1,6 +1,6 @@
 ## STAGE 1 BUILD REACT PROJECT
 FROM node:lts-alpine3.18 AS build
-WORKDIR /app
+WORKDIR /home/app
 COPY package*.json ./
 RUN npm install
 COPY . .
