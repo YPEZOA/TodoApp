@@ -46,7 +46,7 @@ export const Navbar = () => {
                     )}
                     <IconButton
                         size="sm"
-                        aria-label="toggle theme"
+                        aria-label="Toggle theme"
                         onClick={toggleColorMode}
                         colorScheme={useColorModeValue('purple', 'orange')}
                         icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
