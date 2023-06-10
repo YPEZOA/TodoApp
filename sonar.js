@@ -2,7 +2,7 @@ import scanner from 'sonarqube-scanner'
 
 scanner(
     {
-        serverUrl: 'http://localhost:9090',
+        serverUrl: 'http://34.133.74.255:9000',
         // token se guarda en configuraciones por defecto en sonar.login en la instalacion de sonarScanner de la maquina
         options: {
             'sonar.projectName': 'Todo App',
