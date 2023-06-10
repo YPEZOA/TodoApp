@@ -16,6 +16,7 @@ import { COLORS } from '../../../theme/colors/colors'
 import { useForm } from '../../../hooks/useForm'
 
 export const Form = () => {
+    console.log(COLORS)
     const { actions, states, setters } = useForm({
         email: '',
         password: ''
@@ -73,8 +74,9 @@ export const Form = () => {
                     </InputGroup>
                     <Box pt={2}>
                         <Button
-                            variant="actions"
-                            bg={useColorModeValue(COLORS.primary, COLORS.primary_dark)}
+                            _hover={false}
+                            color={COLORS.primary_text}
+                            backgroundColor={useColorModeValue(COLORS.dark_blue, COLORS.secondary)}
                             w="full"
                             isDisabled={!email || !password}
                             onClick={handleSubmit}
