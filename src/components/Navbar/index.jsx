@@ -1,6 +1,13 @@
 import React from 'react'
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { Box, HStack, IconButton, Link, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import {
+    Box,
+    HStack,
+    IconButton,
+    Link,
+    useColorMode,
+    useColorModeValue
+} from '@chakra-ui/react'
 import { Link as ReachLink, useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
@@ -39,7 +46,7 @@ export const Navbar = () => {
                     )}
                     <IconButton
                         size="sm"
-                        aria-label="toggle theme"
+                        aria-label="Toggle theme"
                         onClick={toggleColorMode}
                         colorScheme={useColorModeValue('purple', 'orange')}
                         icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}

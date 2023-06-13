@@ -1,6 +1,6 @@
 projectKey=todo-app
-serverUrl=http://localhost:9090
-serverVersion=9.9.1.69595
-dashboardUrl=http://localhost:9090/dashboard?id=todo-app
-ceTaskId=AYih4dbHLIrOa1rJbyGr
-ceTaskUrl=http://localhost:9090/api/ce/task?id=AYih4dbHLIrOa1rJbyGr
+serverUrl=http://34.133.74.255:9000
+serverVersion=9.7.0.61563
+dashboardUrl=http://34.133.74.255:9000/dashboard?id=todo-app
+ceTaskId=AYij_rnZ7475kiQiWJ0O
+ceTaskUrl=http://34.133.74.255:9000/api/ce/task?id=AYij_rnZ7475kiQiWJ0O
