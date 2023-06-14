@@ -1,4 +1,3 @@
-import React from 'react'
 import { EmailIcon, ViewIcon, ViewOffIcon } from '@chakra-ui/icons'
 import {
     Box,
@@ -14,7 +13,7 @@ import {
     useColorModeValue,
     Link
 } from '@chakra-ui/react'
-import {Link as ReachLink} from 'react-router-dom'
+import { Link as ReachLink } from 'react-router-dom'
 import { COLORS } from '../../../theme/colors/colors'
 import { useForm } from '../../../hooks/useForm'
 
@@ -74,16 +73,25 @@ export const Form = () => {
                             placeholder="contraseña"
                         />
                     </InputGroup>
-                    <Text pl={2} fontSize={12}>Aún no tienes cuenta? <Link color={useColorModeValue(COLORS.dark_blue,COLORS.success)} as={ReachLink}  to='/register'>Registrate!</Link></Text>
+                    <Text pl={2} fontSize={12}>
+                        Aún no tienes cuenta?{' '}
+                        <Link
+                            color={useColorModeValue(COLORS.dark_blue, COLORS.success)}
+                            as={ReachLink}
+                            to="/register"
+                        >
+                            Registrate!
+                        </Link>
+                    </Text>
                     <Box pt={1}>
                         <Button
-                            w='full'
+                            w="full"
                             _hover={false}
                             color={COLORS.primary_text}
                             backgroundColor={useColorModeValue(COLORS.dark_blue, COLORS.secondary)}
                             isDisabled={!email || !password}
                             onClick={handleSubmit}
-                            aria-label='Send Login'
+                            aria-label="Send Login"
                         >
                             Ingresar
                         </Button>
