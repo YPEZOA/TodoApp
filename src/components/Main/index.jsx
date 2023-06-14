@@ -1,10 +1,10 @@
-import { Text } from '@chakra-ui/react'
 import { Layout } from '../Layout'
+import RegisterActivity from '../RegisterActivity/RegisterActivity'
 
 export const Main = () => {
     return (
         <Layout>
-            <Text>Weta</Text>
+            <RegisterActivity />
         </Layout>
     )
 }

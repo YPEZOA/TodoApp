@@ -1,19 +1,16 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {  Route, Routes } from 'react-router-dom'
 import { Login } from '../components/Login'
 import { Main } from '../components/Main'
 import { Navbar } from '../components/Navbar'
 
 export const AppRoute = () => {
-    return (
-        <>
-            <BrowserRouter>
-                <Navbar />
-                <Routes>
-                    <Route path="login" element={<Login />} />
-                    <Route path="/" element={<Main />} />
-                </Routes>
-            </BrowserRouter>
-        </>
-    )
+  return (
+    <>
+          <Navbar />
+          <Routes>
+            <Route path="login" element={<Login />} />
+            <Route path="/" element={<Main />} />
+          </Routes>
+    </>
+  )
 }

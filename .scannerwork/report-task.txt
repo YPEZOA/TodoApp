@@ -1,6 +1,0 @@
-projectKey=todo-app
-serverUrl=http://34.133.74.255:9000
-serverVersion=9.7.0.61563
-dashboardUrl=http://34.133.74.255:9000/dashboard?id=todo-app
-ceTaskId=AYij_rnZ7475kiQiWJ0O
-ceTaskUrl=http://34.133.74.255:9000/api/ce/task?id=AYij_rnZ7475kiQiWJ0O
