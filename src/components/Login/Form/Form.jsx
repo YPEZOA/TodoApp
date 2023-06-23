@@ -8,10 +8,10 @@ import {
     Input,
     InputGroup,
     InputRightElement,
-    Stack,
     Text,
     useColorModeValue,
-    Link
+    Link,
+    VStack
 } from '@chakra-ui/react'
 import { Link as ReachLink } from 'react-router-dom'
 import { COLORS } from '../../../theme/colors/colors'
@@ -33,7 +33,7 @@ export const Form = () => {
         <Box style={{ marginTop: 20 }}>
             <Heading>Ingresa a tu espacio</Heading>
             <FormControl width={{ base: 'xs', md: 'md' }} mt={5}>
-                <Stack>
+                <VStack alignItems='left'>
                     <InputGroup>
                         <InputRightElement>
                             <EmailIcon color="teal.500" />
@@ -96,7 +96,7 @@ export const Form = () => {
                             Ingresar
                         </Button>
                     </Box>
-                </Stack>
+                </VStack>
             </FormControl>
         </Box>
     )

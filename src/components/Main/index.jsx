@@ -1,10 +1,10 @@
 import { Layout } from '../Layout'
-import RegisterActivity from '../RegisterActivity/RegisterActivity'
+import Tasks from '../Tasks'
 
 export const Main = () => {
     return (
         <Layout>
-            <RegisterActivity />
+            <Tasks />
         </Layout>
     )
 }
