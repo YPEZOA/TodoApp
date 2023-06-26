@@ -1,4 +1,3 @@
-import { labels } from '../../constants/index'
 import { tasks } from '../../mocks/tasks'
 
 const useTasks = () => {

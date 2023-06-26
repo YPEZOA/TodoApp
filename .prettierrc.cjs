@@ -1,5 +1,5 @@
 const options = {
-    tabWidth: 4,
+    tabWidth: 2,
     arrowParens: 'avoid',
     semi: false,
     singleQuote: true,

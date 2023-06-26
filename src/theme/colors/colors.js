@@ -1,6 +1,7 @@
 const COLORS = {
+    background_light: '#f2f2f2',
     text_dark: '#f2f2f2',
-    text_light: '',
+    create_task_button: '#594ca1',
     todo_label: ' #6F747F',
     inprogress_label: '#194569',
     done_label: '#2CA87F',
