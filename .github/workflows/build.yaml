@@ -6,6 +6,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
+name: SonarQube Scan
 jobs:
   sonarqube:
     name: SonarQube Trigger
@@ -25,7 +26,7 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: todoappfront
+      image: ypezoadev/todoapp
       env:
         NODE_ENV: development
       ports:
