@@ -2,7 +2,7 @@ import scanner from 'sonarqube-scanner'
 
 scanner(
   {
-    serverUrl: 'https://352d-45-162-133-12.ngrok-free.app/',
+    serverUrl: 'https://e1e6-45-162-133-12.ngrok-free.app',
     // token: 'squ_66b38de2dfa8d294e4f520152a2956087490b9ae',
     options: {
       'sonar.projectName': 'Todo App',

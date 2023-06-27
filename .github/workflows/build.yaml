@@ -1,13 +1,11 @@
+name: CI
 on:
-  # Trigger analysis when pushing in master or pull requests, and when creating
-  # a pull request.
   push:
     branches:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
 
-name: SonarQube Scan
 jobs:
   sonarqube:
     name: SonarQube Trigger
@@ -23,3 +21,18 @@ jobs:
         with:
           host: ${{ secrets.SONARQUBE_HOST }}
           login: ${{ secrets.SONARQUBE_TOKEN }}
+
+  container-test-job:
+    runs-on: ubuntu-latest
+    container:
+      image: todoappfront
+      env:
+        NODE_ENV: development
+      ports:
+        - 80
+      volumes:
+        - my_docker_volume:/volume_mount
+      options: --cpus 1
+    steps:
+      - name: Check for dockerenv file
+        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
