@@ -25,13 +25,11 @@ jobs:
   container-test-job:
     runs-on: ubuntu-latest
     container:
-      image: ypezoadev/todoapp:v1.0.0
+      image: Dockerfile
       env:
         NODE_ENV: development
       ports:
         - 80
-      volumes:
-        - my_docker_volume:/volume_mount
       options: --cpus 1
     steps:
       - name: Check for dockerenv file

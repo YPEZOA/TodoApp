@@ -1,0 +1,6 @@
+projectKey=todo-app
+serverUrl=https://e1e6-45-162-133-12.ngrok-free.app
+serverVersion=10.1.0.73491
+dashboardUrl=https://e1e6-45-162-133-12.ngrok-free.app/dashboard?id=todo-app
+ceTaskId=AYj79mTIh1AtXkQW0FKY
+ceTaskUrl=https://e1e6-45-162-133-12.ngrok-free.app/api/ce/task?id=AYj79mTIh1AtXkQW0FKY
