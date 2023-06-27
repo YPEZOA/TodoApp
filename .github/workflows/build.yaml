@@ -6,7 +6,6 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 
-name: SonarQube Scan
 jobs:
   sonarqube:
     name: SonarQube Trigger
