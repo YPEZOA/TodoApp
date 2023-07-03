@@ -6,19 +6,20 @@ import useTasks from './useTasks'
 const TasksContainer = ({ label, tasks }) => {
     const { states } = useTasks()
     return (
-        <VStack alignItems='left' spacing={6}>
-            <Box display='flex' alignItems='center'>
-                <Badge backgroundColor={label.color} p={2} rounded='full' />
-                <Text fontWeight='extrabold' fontSize={12} ml={2}>{label.text.toUpperCase()}</Text>
+        <VStack alignItems="left" spacing={6}>
+            <Box display="flex" alignItems="center">
+                <Badge backgroundColor={label.color} p={2} rounded="full" />
+                <Text fontWeight="extrabold" fontSize={12} ml={2}>
+                    {label.text.toUpperCase()}
+                </Text>
             </Box>
-            {states.tasksIsReady && (
+            {states.tasksIsReady &&
                 tasks.map(task => {
                     const { id, title, description, subtasks } = task
                     return (
                         <Task key={id} title={title} description={description} subtasks={subtasks} />
                     )
-                })
-            )}
+                })}
         </VStack>
     )
 }

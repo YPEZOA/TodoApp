@@ -1,4 +1,4 @@
-import { Button, SimpleGrid, useDisclosure } from '@chakra-ui/react'
+import { Button, SimpleGrid } from '@chakra-ui/react'
 import { labels } from '../../constants'
 import TasksContainer from './TasksContainer'
 import useTasks from './useTasks'
@@ -11,12 +11,10 @@ const Tasks = () => {
         <SimpleGrid
             templateColumns="repeat(auto-fill, minmax(20rem, 1fr))"
             spacing={3}
-            pb={5}>
+            pb={5}
+        >
             <TasksContainer label={TODO} tasks={actions.filteredTasks(TODO.text)} />
-            <TasksContainer
-                label={INPROGRESS}
-                tasks={actions.filteredTasks(INPROGRESS.text)}
-            />
+            <TasksContainer label={INPROGRESS} tasks={actions.filteredTasks(INPROGRESS.text)} />
             <TasksContainer label={DONE} tasks={actions.filteredTasks(DONE.text)} />
             <AddTask />
         </SimpleGrid>
