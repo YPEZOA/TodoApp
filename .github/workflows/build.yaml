@@ -1,36 +1,36 @@
-name: CI
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
-
-jobs:
-  sonarqube:
-    name: SonarQube Trigger
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checking out
-        uses: actions/checkout@main
-        with:
-          # Disabling shallow clone is recommended for improving relevancy of reporting
-          fetch-depth: 0
-      - name: SonarQube Scan
-        uses: kitabisa/sonarqube-action@v1.2.0
-        with:
-          host: ${{ secrets.SONARQUBE_HOST }}
-          login: ${{ secrets.SONARQUBE_TOKEN }}
-
-  container-test-job:
-    runs-on: ubuntu-latest
-    container:
-      image: ypezoadev/todoapp:v1.0.0
-      env:
-        NODE_ENV: development
-      ports:
-        - 80
-      options: --cpus 1
-    steps:
-      - name: Check for dockerenv file
-        run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
+# name: CI
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     types: [opened, synchronize, reopened]
+#
+# jobs:
+#   sonarqube:
+#     name: SonarQube Trigger
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checking out
+#         uses: actions/checkout@main
+#         with:
+#           # Disabling shallow clone is recommended for improving relevancy of reporting
+#           fetch-depth: 0
+#       - name: SonarQube Scan
+#         uses: kitabisa/sonarqube-action@v1.2.0
+#         with:
+#           host: ${{ secrets.SONARQUBE_HOST }}
+#           login: ${{ secrets.SONARQUBE_TOKEN }}
+#
+#   container-test-job:
+#     runs-on: ubuntu-latest
+#     container:
+#       image: ypezoadev/todoapp:v1.0.0
+#       env:
+#         NODE_ENV: development
+#       ports:
+#         - 80
+#       options: --cpus 1
+#     steps:
+#       - name: Check for dockerenv file
+#         run: (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)

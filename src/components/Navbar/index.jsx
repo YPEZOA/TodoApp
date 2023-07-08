@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
-import { Box, Container, HStack, IconButton, Link, useColorMode } from '@chakra-ui/react'
+import { Box, HStack, IconButton, Link, useColorMode } from '@chakra-ui/react'
 import { Link as ReachLink, useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
